@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilo personalizado -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Estilo personalizado -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Carlos Llanes Developer</h1>
+        <h1 class ="my-title">Carlos Llanes <span>Developer</span></h1>
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -66,6 +76,31 @@
         </section>
     </main>
     </section>
+    <h2>Contacto</h2>
+    <form>  
+        <fieldset>
+            <legend>Llena tus datos de contacto</legend>
+            <div>
+                <label>Nombre Completo</label>
+                <input type="text" placeholder="Tu Nombre" required>
+            </div>
+            <div>
+                <label>Teléfono</label>
+                <input type="tel" placeholder="Tu Teléfono" required>
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div>
+                <label>Mensaje</label>
+                <textarea placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
     <footer>
         <p>Todos los derechos reservados. Carlos Llanes Developer</p>
     </footer>
