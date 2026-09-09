@@ -2,7 +2,7 @@
 
 :root {
     --blanco: #fff;
-    --oscuro: #21212121;
+    --oscuro: #212121;
     --primario: #ffc107;
     --secundario: #26939f;
     --gris: #757575;
@@ -29,35 +29,41 @@ body{
 
 .nav-bg{
     background-color: var(--secundario);
-    padding: 1rem 0;
+    padding: 0;
     
 }
 
 .nav-principal{
+    font-family: 'Krub', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
     background-color: var(--secundario);
     /* Flexbox define como alinear elementos*/
     display: flex;
     justify-content: center; /* Centra los elementos horizontalmente */
     justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
     font-weight: bold; /* Hace que el texto sea negrita */
-    font-size: 2rem; /* Define el tamaño de fuente para los elementos del nav */
+    font-size: 1.6rem; /* Define el tamaño de fuente para los elementos del nav */
     list-style: none; 
 }
 
 /* Cuando pongo el cursor encima del enlace del nav principal, cambia el color de fondo */
 .nav-principal a:hover{
     background-color: var(--primario);
+    color: var(--oscuro);
+    height: 100%;
+    padding: auto;
 
 }
 
 .nav-principal a{
     color: var(--blanco);
     text-decoration: none;
-    padding: 1rem;
+    padding: 1.6rem;
 }
 
 .contenedor{
-    width: 120rem;
+    width: 130rem;
+    
     margin: 0 auto; /* Centra el contenedor horizontalmente */
     /* 
     margin-top:0
