@@ -8,67 +8,110 @@
     --gris: #757575;
 }
 
-/* Truco para uniformidad en textos entre navegadores */
-
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 16px;
 }
 
-.my-title{
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.my-title {
     text-align: center;
     font-size: 3.8rem;
 }
 
-.my-title span{
+.my-title span {
     font-size: 2rem;
 }
 
-.nav-bg{
+.nav-bg {
     background-color: var(--secundario);
     padding: 0;
-    
 }
 
-.nav-principal{
+.nav-principal {
     font-family: 'Krub', sans-serif;
-    @import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
     background-color: var(--secundario);
-    /* Flexbox define como alinear elementos*/
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-    font-weight: bold; /* Hace que el texto sea negrita */
-    font-size: 1.6rem; /* Define el tamaño de fuente para los elementos del nav */
-    list-style: none; 
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.6rem;
+    list-style: none;
 }
 
-/* Cuando pongo el cursor encima del enlace del nav principal, cambia el color de fondo */
-.nav-principal a:hover{
+.nav-principal a:hover {
     background-color: var(--primario);
     color: var(--oscuro);
     height: 100%;
     padding: auto;
-
 }
 
-.nav-principal a{
+.nav-principal a {
     color: var(--blanco);
     text-decoration: none;
     padding: 1.6rem;
 }
 
-.contenedor{
+.contenedor {
     width: 130rem;
-    
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    /* 
-    margin-top:0
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    */
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    min-height: 52rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    color: var(--blanco);
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, .48), rgba(0, 0, 0, .62)), url('../img/SPIDERMAN.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 3rem;
+}
+
+.hero-content h2 {
+    margin: 0 0 2rem;
+    color: var(--blanco);
+    font-size: 4rem;
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.2rem 2.4rem;
+    background-color: var(--primario);
+    color: var(--oscuro);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 44rem;
+        background-position: 58% center;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
 }
