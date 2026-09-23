@@ -40,19 +40,67 @@
     </section>
     <main>
         <h2>Mis servicios</h2>
-        <section><h3>Diseño Web</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></section>
-        <section><h3>Aplicaciones Móviles</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></section>
-        <section><h3>Desarrollo de videojuegos</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></section>
+        <div class="servicios">
+
+        <section class="servicio">
+            <h3>Diseño Web</h3>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-app-window-bottom">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+	<path d="M6 14h12v2h-12v-2" fill="currentColor" />
+</svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section class="servicio">
+            <h3>Aplicaciones Móviles</h3>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-android">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M4 10l0 6" />
+        <path d="M20 10l0 6" />
+        <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />
+        <path d="M8 3l1 2" />
+        <path d="M16 3l-1 2" />
+        <path d="M9 18l0 3" />
+        <path d="M15 18l0 3" />
+
+
+</svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-apple"><path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077" />
+                    <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" /></svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section class="servicio">
+            <h3>Desarrollo de videojuegos</h3>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-xbox">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+	<path d="M6.5 5c7.72 2.266 10.037 7.597 12.5 12.5" />
+	<path d="M17.5 5c-7.72 2.266 -10.037 7.597 -12.5 12.5" />
+</svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        </div>
     </main>
     <h2>Contacto</h2>
     <form>
         <fieldset>
             <legend>Llena tus datos de contacto</legend>
-            <div><label for="nombre">Nombre Completo</label><input id="nombre" type="text" placeholder="Tu Nombre" required></div>
-            <div><label for="telefono">Teléfono</label><input id="telefono" type="tel" placeholder="Tu Teléfono" required></div>
-            <div><label for="email">Email</label><input id="email" type="email" placeholder="Tu correo electrónico" required></div>
-            <div><label for="mensaje">Mensaje</label><textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea></div>
-            <div><input type="submit" value="Enviar"></div>
+            <div class = "contenedor-campos">
+            <div class = "campo"><label for="nombre">Nombre Completo</label><input id="nombre" type="text" placeholder="Tu Nombre" required></div>
+            <div class = "campo"><label for="telefono">Teléfono</label><input id="telefono" type="tel" placeholder="Tu Teléfono" required></div>
+            <div class = "campo"><label for="email">Email</label><input id="email" type="email" placeholder="Tu correo electrónico" required></div>
+            <div class = "campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea></div>
+            <div class="alinear-derecha flex">
+            <div><input class="boton w-sm-100" type="submit" value="Enviar"></div>
+            </div>
         </fieldset>
     </form>
     <footer><p>Todos los derechos reservados. Carlos Llanes Developer</p></footer>
